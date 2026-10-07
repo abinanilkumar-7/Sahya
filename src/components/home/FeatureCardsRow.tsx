@@ -158,7 +158,7 @@ export const FeatureCardsRow: React.FC<FeatureCardsRowProps> = ({ onOpenMedicalR
                 </g>
 
                 {/* Speech bubble */}
-                <circle cx="95" cy="80" r="11" fill="#FDE68A" fillOpacity="0.7" />
+                <circle cx="95" cy="80" r="11" fill="#fd8a8a" fillOpacity="0.7" />
               </svg>
             </div>
           </div>

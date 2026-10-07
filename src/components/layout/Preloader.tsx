@@ -40,7 +40,7 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
       <div className="relative flex flex-col items-center">
         {/* Animated Brand Emblem */}
         <div className="relative flex items-center justify-center w-20 h-20 mb-6 rounded-2xl bg-gradient-to-tr from-teal-600 via-cyan-500 to-teal-400 p-0.5 shadow-xl shadow-teal-500/20 animate-pulse-subtle">
-          <div className="w-full h-full bg-navy-900 rounded-[14px] flex items-center justify-center">
+          <div className="w-full h-full bg-slate-50 rounded-[14px] flex items-center justify-center">
             <HeartHandshake className="w-10 h-10 text-cyan-400 animate-bounce" />
           </div>
         </div>

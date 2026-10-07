@@ -9,6 +9,7 @@ import {
   Droplets,
   ArrowRight
 } from 'lucide-react';
+import { VolunteerBanner } from './VolunteerBanner';
 
 interface CategoryItem {
   id: string;
@@ -136,6 +137,7 @@ export const CategoryGrid: React.FC = () => {
         </div>
 
       </div>
+      <VolunteerBanner/>
     </section>
   );
 };

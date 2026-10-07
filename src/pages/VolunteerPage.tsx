@@ -77,7 +77,7 @@ export const VolunteerPage: React.FC = () => {
                   required
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  placeholder="Siddharth Rao"
+                  placeholder="Abinandhan"
                   className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-teal-500"
                 />
               </div>
@@ -89,7 +89,7 @@ export const VolunteerPage: React.FC = () => {
                   required
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  placeholder="siddharth@example.com"
+                  placeholder="Abinandhan@example.com"
                   className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-teal-500"
                 />
               </div>
@@ -103,7 +103,7 @@ export const VolunteerPage: React.FC = () => {
                   required
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
-                  placeholder="+91 98234 56789"
+                  placeholder="+91 99999 11111"
                   className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-teal-500"
                 />
               </div>
@@ -115,7 +115,7 @@ export const VolunteerPage: React.FC = () => {
                   required
                   value={city}
                   onChange={(e) => setCity(e.target.value)}
-                  placeholder="Central City"
+                  placeholder="Chennai"
                   className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-teal-500"
                 />
               </div>
@@ -137,13 +137,33 @@ export const VolunteerPage: React.FC = () => {
 
             <div>
               <label className="block text-navy-950 font-bold mb-1">Preferred Volunteer Role</label>
-              <input
-                type="text"
+              <select value = {preferredRole} onChange={(e) => setPreferredRole(e.target.value)} 
+              className = "w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border-slate-200 focus:border-emerald-500 text-gray-900"
+              >
+                {/*Default Placeholder Options*/}
+                <option value = "" disabled>
+                  Select a Volunteer Role...
+                </option>
+                {/* Dropdown List Items*/ }
+                <option value ="First Responder">First Responder</option>
+                <option value="Food Distribution">Food Distribution</option>
+                <option value="Logistics Driver">Logistics Driver</option>
+                <option value="Support Worker">Support Worker</option>
+                <option value="Medical Support">Medical Support</option>
+                <option value="Food Bank Assistant">Food Bank Assistant</option>
+                <option value="Crowd Marshal / Usher">Crowd Marshal</option>
+                <option value="Elderly Care">Elderly Care</option>
+                <option value="Animal Care">Animal Care</option>
+                <option value="Community Outreach Specialist">Community Outreach Specialist</option>
+                <option value="Language Support">Language Support</option>
+              </select>
+              {/*<input
+                type="text "
                 value={preferredRole}
                 onChange={(e) => setPreferredRole(e.target.value)}
                 placeholder="e.g. First Responder, Food Distribution, Logistics Driver"
                 className="w-full px-3.5 py-2.5 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:border-teal-500"
-              />
+              />*/}
             </div>
 
             <button
@@ -186,3 +206,5 @@ export const VolunteerPage: React.FC = () => {
     </div>
   );
 };
+
+

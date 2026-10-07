@@ -78,7 +78,7 @@ export const Footer: React.FC<FooterProps> = ({
               </a>
               {/* Instagram */}
               <a
-                href="#instagram"
+                href="www.instagram.com/abin_46_7"
                 aria-label="Instagram"
                 className="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-teal-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors text-xs font-bold"
               >
@@ -86,7 +86,7 @@ export const Footer: React.FC<FooterProps> = ({
               </a>
               {/* LinkedIn */}
               <a
-                href="#linkedin"
+                href="www.linkedin.com/in/abin-anilkumar-"
                 aria-label="LinkedIn"
                 className="w-8 h-8 rounded-full bg-slate-800/80 hover:bg-teal-600 text-slate-300 hover:text-white flex items-center justify-center transition-colors text-xs font-bold"
               >
@@ -180,7 +180,7 @@ export const Footer: React.FC<FooterProps> = ({
 
         {/* Bottom Bar: Copyright & Made with care */}
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-slate-500">
-          <p>© 2025 Pandemic Resource Finder. All rights reserved.</p>
+          <p>© 2026 Sahya - The Helping Hands. All rights reserved.</p>
           <p className="flex items-center gap-1.5 text-slate-400">
             <Heart className="w-3.5 h-3.5 text-rose-500 fill-rose-500" />
             <span>Made with care for a safer tomorrow.</span>

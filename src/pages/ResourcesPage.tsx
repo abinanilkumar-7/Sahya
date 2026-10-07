@@ -5,6 +5,7 @@ import { resourceService } from '../services/resourceService';
 import { useLocation } from '../context/LocationContext';
 import { ResourceCard } from '../components/resources/ResourceCard';
 import { Search, Filter, CheckCircle2, MapPin, LocateFixed, Loader2 } from 'lucide-react';
+import { VolunteerBanner } from '@/components/home/VolunteerBanner';
 
 interface ResourcesPageProps {
   forcedCategory?: ResourceCategory;

@@ -9,6 +9,7 @@ import {
   FileCheck2,
   Sparkles
 } from 'lucide-react';
+import { VolunteerBanner } from './VolunteerBanner';
 
 interface HeroProps {
   onOpenEmergency: () => void;
@@ -30,7 +31,8 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEmergency, onOpenEPassModal })
   };
 
   return (
-    <section className="relative pt-36 sm:pt-40 pb-16 lg:pb-24 bg-gradient-to-b from-[#E7F3FA] via-[#F4F9FC] to-white overflow-hidden">
+    <section className="relative pt-36 sm:pt-40 pb-16 lg:pb-24 bg-gradient-to-b from-[#00CED1] via-[#F4F9FC] to-white overflow-hidden">
+
       {/* Soft Ambient Decorative Lighting */}
       <div className="absolute top-16 left-1/4 w-[450px] h-[450px] bg-teal-200/20 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute top-28 right-10 w-[550px] h-[550px] bg-cyan-200/25 rounded-full blur-[130px] pointer-events-none" />
@@ -113,6 +115,14 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEmergency, onOpenEPassModal })
                 <FileCheck2 className="w-4 h-4 text-teal-600" />
                 <span>Apply for e-pass</span>
               </button>
+
+              <button
+                onClick={() => navigate('/emergency')}
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white hover:bg-slate-50 border border-slate-200 text-slate-700 text-xs font-semibold shadow-2xs hover:shadow-sm transition-all hover:border-teal-400"
+              >
+                <FileCheck2 className="w-4 h-4 text-teal-600" />
+                <span>Emergency assistance</span>
+              </button>
             </div>
 
           </div>
@@ -127,7 +137,7 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEmergency, onOpenEPassModal })
               {/* Seamless blended 3D artwork container */}
               <div className="relative z-10 w-full h-full flex items-center justify-center group [mask-image:radial-gradient(ellipse_at_center,black_75%,transparent_100%)]">
                 <img
-                  src="/hero-shield.png"
+                  src="/hero-img.png"
                   alt="3D Medical Shield on Pedestal with Mask"
                   className="w-full h-full object-contain drop-shadow-[0_20px_40px_rgba(4,38,61,0.12)] transition-transform duration-700 group-hover:scale-[1.02]"
                 />
@@ -139,5 +149,6 @@ export const Hero: React.FC<HeroProps> = ({ onOpenEmergency, onOpenEPassModal })
         </div>
       </div>
     </section>
+
   );
 };

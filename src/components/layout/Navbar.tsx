@@ -122,6 +122,15 @@ export const Navbar: React.FC<NavbarProps> = ({
             </Link>
 
             <Link
+              to="/volunteers"
+              className={`transition-colors hover:text-teal-700 ${
+                isActive('/volunteers') ? 'text-teal-700 font-semibold' : 'text-slate-700'
+              }`}
+            >
+              Volunteers
+            </Link>
+
+            <Link
               to="/complaints"
               className={`transition-colors hover:text-teal-700 ${
                 isActive('/complaints') ? 'text-teal-700 font-semibold' : 'text-slate-700'
